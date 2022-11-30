@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="popupp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="core.js"></script>
+    <script src="shop.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="serverIp" onclick="copyIp()">
+            <p>Server status: <span class="serverStatus" id="serverStatus">...</span> Players: <span class="playersOn" id="playersOn">0</span><span class="playersMax">/</span><span class="playersMax" id="playersMax">0</span></p>
+            <p>SERVER IP » <span class="serverIpText" id="serverIpText">..</span></p>
+            
+        </div>
+        <div class="bar"></div>
+
+        <div id="bannerTop" class="bannerTop">
+            <div class="logo">
+                <a href="./index.html"><img src="logo.png" alt=""></a>
+            </div>
+            
+                <a href="./index.html"><p id="title"></p></a>
+            
+        </div>
+        <div class="barTwo"></div>
+        <div class="clear"></div>
+
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./information.html">Information</a></li>
+                    <li><a style="color: white;" href="./shop.html">Shop</a></li>
+                    <li><a href="./help.html">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="article">
+
+            <h1 class="articleTitle">SERVER SHOP</h1>
+
+            <p class="articleDescription">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in tristique ex.
+                Nam fermentum ultricies odio vitae aliquam. Pellentesque ligula tortor, porta elementum neque a, laoreet
+                congue libero. Integer quis augue odio.
+            </p>
+
+            <div class="frames">
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="https://media.discordapp.net/attachments/1027864299068215316/1034401890735239249/D1BC1273-782B-43DE-8068-BD602FF63A71.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        1x Diamond, 2x Diamond, 3x Gold_Ingot, 4x Grass.
+                    </div>
+                    <body>
+                        <div class="popup" id="popup">
+                            <div class="popup-title">
+                              VIP
+                            
+                            </div>
+
+                            <div class="popup-description">
+                            
+                                Iron Tools,armor and 64 beef 1 iron sword,1 Iron Pickaxe,1 Iron Axe, 1 Iron Shovel, 1 Iron Boots, 1 Iron Legins, 1 Iron chestplate, 1 Iron Helmet
+                            </div>
+                    
+                            <div class="popup-buttons">
+                                <input class="btn" type="button" value="Yes" onclick="Tak()">
+                                <button class="btn" onclick="hide()">No</button>
+                            </div>
+                        </div>
+                    
+                        <input class="itemframeButton" type="button" value="BUY" onclick="show()">
+                    </body>
+                    
+                    <script>
+                        const popup = document.getElementById("popup");
+                    
+                        function show() {
+                            popup.classList.remove("popup-close");
+                            popup.classList.add("popup-open");
+                        }
+                    
+                    
+                        function hide() {
+                            popup.classList.add("popup-close");
+                            popup.classList.remove("popup-open");
+                        }
+                    </script>
+                </div>
+
+                <div class="itemframee">
+                    <div class="itemframeTitlee">
+                        MVIP
+                    </div>
+
+                    <div class="itemframeImagee">
+                        <img src="https://media.discordapp.net/attachments/1027864299068215316/1034403779241578506/3AD18B5A-B079-42C2-A46D-AC770CB36DB5.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeTextt">
+                        1x Diamond, 2x Diamond, 3x Gold_Ingot, 4x Grass.
+                    </div>
+                    <body2>
+                        <div class="MVIP" id="MVIP">
+                            <div class="MVIP-title">
+                              MVIP
+                            <body2>
+                            </div>
+                            <img src="https://media.discordapp.net/attachments/1027864299068215316/1034403779241578506/3AD18B5A-B079-42C2-A46D-AC770CB36DB5.png"
+                            alt="">
+                            <div class="MVIP-description">
+                                Iron Tools,armor and 64 beef 1 iron sword,1 Iron Pickaxe,1 Iron Axe, 1 Iron Shovel, 1 Iron Boots, 1 Iron Legins, 1 Iron chestplate, 1 Iron Helmet
+                            </div>
+                    
+                            <div class="MVIP-buttons">
+                                <input class="btn" type="button" value="Yes" onclick="Tak()">
+                                <button class="btn" onclick="hide()">No</button>
+                            </div>
+                        </div>
+
+                        <input class="itemframeButtonn" type="button" value="BUY" onclick="show()">
+                    </body2>
+                    
+                    <script>
+                        const MVIP = document.getElementById("MVIP");
+                    
+                        function show() {
+                            MVIP.classList.remove("MVIP-close");
+                            MVIP.classList.add("MVIP-open");
+                        }
+                    
+                    
+                        function hide() {
+                            MVIP.classList.add("MVIP-close");
+                            MVIP.classList.remove("MVIP-open");
+                        }
+                    </script>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        ELITE
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="https://media.discordapp.net/attachments/1027864299068215316/1034726222233612288/name-tag-icons-rank-names-260nw-1797079399.png"
+                        alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        1x Diamond, 2x Diamond, 3x Gold_Ingot, 4x Grass.
+                    </div>
+
+                    <body>
+                        <div class="popup" id="popup">
+                            <div class="popup-title">
+                                ELITE
+                            </div>
+                            <img src="https://media.discordapp.net/attachments/1027864299068215316/1034726222233612288/name-tag-icons-rank-names-260nw-1797079399.png"
+                            alt="">
+                            <div class="popup-description">
+                                Iron Tools,armor and 64 beef 1 iron sword,1 Iron Pickaxe,1 Iron Axe, 1 Iron Shovel, 1 Iron Boots, 1 Iron Legins, 1 Iron chestplate, 1 Iron Helmet
+                            </div>
+                    
+                            <div class="popup-buttons">
+                                <input class="btn" type="button" value="Yes" onclick="Tak()">
+                                <button class="btn" onclick="hide()">No</button>
+                            </div>
+                        </div>
+                    
+                        <input class="itemframeButton" type="button" value="BUY" onclick="show()">
+                    </body>
+                    
+                    <script>
+                        const popup = document.getElementById("popup");
+                    
+                        function show() {
+                            popup.classList.remove("popup-close");
+                            popup.classList.add("popup-open");
+                        }
+                    
+                    
+                        function hide() {
+                            popup.classList.add("popup-close");
+                            popup.classList.remove("popup-open");
+                        }
+                    </script>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        VIP+
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="https://media.discordapp.net/attachments/1027864299068215316/1034723149255823360/6A605ADE-8439-4119-AF58-AC956C82CCC8.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        1x Diamond, 2x Diamond, 3x Gold_Ingot, 4x Grass.
+                    </div>
+
+                    <body>
+                        <div class="popup" id="popup">
+                            <div class="popup-title">
+                              VIP+
+                            </div>
+                            <img src="https://media.discordapp.net/attachments/1027864299068215316/1034723149255823360/6A605ADE-8439-4119-AF58-AC956C82CCC8.png"
+                            alt="">
+                            <div class="popup-description">
+                                Iron Tools,armor and 64 beef 1 iron sword,1 Iron Pickaxe,1 Iron Axe, 1 Iron Shovel, 1 Iron Boots, 1 Iron Legins, 1 Iron chestplate, 1 Iron Helmet
+                            </div>
+                    
+                            <div class="popup-buttons">
+                                <input class="btn" type="button" value="Yes" onclick="Tak()">
+                                <button class="btn" onclick="hide()">No</button>
+                            </div>
+                        </div>
+                    
+                        <input class="itemframeButton" type="button" value="BUY" onclick="show()">
+                    </body>
+                    
+                    <script>
+                        const popup = document.getElementById("popup");
+                    
+                        function show() {
+                            popup.classList.remove("popup-close");
+                            popup.classList.add("popup-open");
+                        }
+                    
+                    
+                        function hide() {
+                            popup.classList.add("popup-close");
+                            popup.classList.remove("popup-open");
+                        }
+                    </script>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        MVIP+
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="https://media.discordapp.net/attachments/1027864299068215316/1034723149016727592/1DCEF609-287B-403F-9375-CD525255352E.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        1x Diamond, 2x Diamond, 3x Gold_Ingot, 4x Grass.
+                    </div>
+                    <body>
+                        <div class="popup" id="popup">
+                            <div class="popup-title">
+                              MVIP+
+                            </div>
+                            <img src="https://media.discordapp.net/attachments/1027864299068215316/1034723149016727592/1DCEF609-287B-403F-9375-CD525255352E.png"
+                            alt="">
+                            <div class="popup-description">
+                                Iron Tools,armor and 64 beef 1 iron sword,1 Iron Pickaxe,1 Iron Axe, 1 Iron Shovel, 1 Iron Boots, 1 Iron Legins, 1 Iron chestplate, 1 Iron Helmet
+                            </div>
+                    
+                            <div class="popup-buttons">
+                                <input class="btn" type="button" value="Yes" onclick="Tak()">
+                                <button class="btn" onclick="hide()">No</button>
+                            </div>
+                        </div>
+                    
+                        <input class="itemframeButton" type="button" value="BUY" onclick="show()">
+                    </body>
+                    
+                    <script>
+                        const popup = document.getElementById("popup");
+                    
+                        function show() {
+                            popup.classList.remove("popup-close");
+                            popup.classList.add("popup-open");
+                        }
+                    
+                    
+                        function hide() {
+                            popup.classList.add("popup-close");
+                            popup.classList.remove("popup-open");
+                        }
+                    </script>
+                </div>
+
+                <div class="itemframe">
+                    <div class="itemframeTitle">
+                        ELITE+
+                    </div>
+
+                    <div class="itemframeImage">
+                        <img src="https://media.discordapp.net/attachments/1027864299068215316/1034723149952077864/E4B64084-8A87-40DB-BB47-8C5DD2B755ED.png"
+                            alt="">
+                    </div>
+
+                    <div class="itemframeText">
+                        1x Diamond, 2x Diamond, 3x Gold_Ingot, 4x Grass.
+                    </div>
+                    <body>
+                        <div class="popup" id="popup">
+                            <div class="popup-title">
+                            ELITE+
+                            <img src="https://media.discordapp.net/attachments/1027864299068215316/1034723149952077864/E4B64084-8A87-40DB-BB47-8C5DD2B755ED.png"
+                            alt="">
+                            </div>
+                         
+                            <div class="popup-description">
+                                Iron Tools,armor and 64 beef 1 iron sword,1 Iron Pickaxe,1 Iron Axe, 1 Iron Shovel, 1 Iron Boots, 1 Iron Legins, 1 Iron chestplate, 1 Iron Helmet
+                            </div>
+                    
+                            <div class="popup-buttons">
+                                <input class="btn" type="button" value="Yes" onclick="Tak()">
+                                <button class="btn" onclick="hide()">No</button>
+                            </div>
+                        </div>
+                    
+                        <input class="itemframeButton" type="button" value="BUY" onclick="show()">
+                    </body>
+                    
+                    <script>
+                        const popup = document.getElementById("popup");
+                    
+                        function show() {
+                            popup.classList.remove("popup-close");
+                            popup.classList.add("popup-open");
+                        }
+                    
+                    
+                        function hide() {
+                            popup.classList.add("popup-close");
+                            popup.classList.remove("popup-open");
+                        }
+                    </script>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="extra">
+
+        </div>
+
+
+        <div class="clear"></div>
+        <footer>
+            <p>All rights reserved.</p>
+            <p>Website created by <a href="discord.gg/multihub"><strong>Spindeel</strong></a> / Spindeel#0001</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

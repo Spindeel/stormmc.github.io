@@ -1,0 +1,58 @@
+ <div class="news">
+                <div class="newsTitle">
+                    <div class="newsIcon"><img src="new.png" alt=""></div>
+                    <h1>NEW Game Modes</h1>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="barTwo"></div>
+                <div class="newsDescription">
+                    <p>The new game mode on the server i going to be oneblock</p>
+                    <br>
+                    <img 
+                        src="https://img.wallpapersafari.com/desktop/1920/1080/5/86/YWZEqj.jpg"
+                        alt="">
+                    <br>
+                    <p></p>
+                    <br>
+                    <p></p>
+                    <br>
+                    <p></p>
+                    <br>
+                    <p></p>
+
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="newsTitle">
+                    <div class="newsIcon"><img src="swords.png" alt=""></div>
+                    <h1>NEW SEASON = NEW EVENTS AND UPDATES</h1>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="barTwo"></div>
+                <div class="newsDescription">
+                    <p></p>
+                    <br>
+                    <p></p>
+                    <br>
+                    <img 
+                        src="https://www.teahub.io/photos/full/208-2086731_minecraft.jpg"
+                        alt="">
+                    <br>
+                
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="nextPage">
+            <ul>
+                <span>Pages:</span>
+                <li><a style="color: black;" href="#">1</a></li>
+                <li><a href="news.html">2</a></li>
+                <li><a href="news.html">3</a></li>
+                <li><a href="news.html">...</a></li>
+            </ul>
+        </nav>

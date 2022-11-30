@@ -1,0 +1,67 @@
+:root {
+   --popup-top: 40%;
+   --dark-purple: #3d1389ff;
+}
+
+
+.body2 {
+   margin: 0;
+   background: #2b2b2b;
+   font-family: Arial, Monospace, sans-serif;
+}
+
+.MVIP
+{
+   background: #1e1e2f;
+   width: 400px;
+   color: white;
+   border-radius: 30px;
+   padding: 20px;
+   position: absolute;
+   top: var(--popup-top);
+   margin: auto;
+   left: 0;
+   right: 0;
+   box-shadow: 5px 15px 15px black;
+   visibility: hidden;
+   z-index: 10;
+   /* visibility: hidden; */
+
+}
+
+@keyframes slide-top {
+   0% {
+       top: 1%;
+   }   
+   100% {
+       top: var(--popup-top);
+   }
+}
+
+.MVIP-open {
+   opacity: 1;
+   visibility: visible;
+   animation: slite-top 0.5s;
+}
+
+.MVIP-close {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s 0.5s, opacity 0.5s linear; 
+}
+
+.MVIP-title {
+   font-weight: 700;
+   margin: 20px;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.MVIP-description {
+   font-size: 14px;
+   padding-top: 10px;
+}
+
+.MVIP-buttons {
+   float: right;
+}

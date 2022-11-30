@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>Information</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="information.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="core.js"></script>
+    <script src="buttons.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="serverIp" onclick="copyIp()">
+            <p>Server status: <span class="serverStatus" id="serverStatus">offline</span> Players: <span class="playersOn" id="playersOn">0</span><span class="playersMax">/</span><span class="playersMax" id="playersMax">0</span></p>
+            <p>SERVER IP » <span class="serverIpText" id="serverIpText">..</span></p>
+            
+        </div>
+        <div class="bar"></div>
+
+        <div id="bannerTop" class="bannerTop">
+            <div class="logo">
+                <a href="./index.html"><img src="logo.png" alt=""></a>
+            </div>
+            
+                <a href="./index.html"><p id="title"></p></a>
+            
+        </div>
+        <div class="barTwo"></div>
+        <div class="clear"></div>
+
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a style="color: white;" href="./information.html">Information</a></li>
+                    <li><a href="./work.html">Shop</a></li>
+                    <li><a href="./kurwa.html">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="article">
+
+            <p class="articleTitle">Information</p>
+
+            <p class="articleDescription">This info is going to help you on the server</p>
+
+            <div class="infoblock">
+                <div class="barPurple"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Rules</p>
+                    <p class="infobDescription"> Rules on the server that you need to know </p>
+                    <p class="infobContent" id="content1">
+                        <br>
+                        Rules:
+                        </br>
+                        <br>
+                        1.No cheating
+                        </br>
+                        <br>
+                        2.No damage to the server
+                        </br>
+                        <br>
+                        3. No real currency trading
+                        </br>
+                        <br>
+                        4. It is forbidden to offend the administration
+                        </br>
+                        <br>
+                        5. Report bugs to administration
+                        </br>
+                        <br>
+                        <img style="height: 200px;"
+                            src="https://media.discordapp.net/attachments/1027864299068215316/1027873554211029063/static_2.png" alt="">
+                    </br>
+                    </p>
+                </div>
+                
+                <div>
+                <input class="infoblockButtonPurple" type="button" value="+" onclick="openContent1()" id="button1">
+            </div>
+            </div>
+            <div class="infoblock">
+                <div class="barRed"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Media</p>Media requirements:<p class="infobContent" id="content2">
+                        <br>
+                        youtube: 500 subs. 10 people on streams or 2 episodes from the server per week
+                        </br>
+                        <br>
+                        twitch: 250 followers. 7 people on streams + 2 streams from the server during the week
+                        </br>
+                        <br>
+                        tiktok: 1000 observations. 5 videos from the server per week + 1 live video per week</p>
+                        </br>
+                    </p>
+                </div>
+                <input class="infoblockButtonRed" type="button" value="+" onclick="openContent2()" id="button2">
+            </div>
+
+            <div class="infoblock">
+                <div class="barGreen"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Economy System</p>
+                    <p class="infobDescription"> The Economy system explenation
+                    </p>
+                    <p class="infobContent" id="content3">
+                        <br>
+                        Skripts to Economy
+                        </br>
+                        <br> 
+                        auction house
+                        </br>
+                        <br>
+                        admin shop (admins can create a shop wear they are seling an item ore buyng an item frome you)
+                        </br>
+                        <br>
+                        Player shop (it's a skript that leting player make thear own shop wear they can sell ther own items ore buy items frome others)
+                        </br>
+                    </p>
+                </div>
+                <input class="infoblockButtonGreen" type="button" value="+" onclick="openContent3()" id="button3">
+            </div>
+
+            <div class="infoblock">
+                <div class="barYellow"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">House System</p>
+                    <p class="infobDescription"> House System explenation
+                    </p>
+                    <p class="infobContent" id="content4">
+                        <br>
+                        House System commands
+                        </br>
+                        <br>
+                        /sethome
+                        </br>
+                        <br>
+                        /home
+                        </br>
+                        <br>
+                        /delhome
+                        </br>
+                    </p>
+                </div>
+                <input class="infoblockButtonYellow" type="button" value="+" onclick="openContent4()" id="button4">
+            </div>
+            <div class="infoblock">
+                <div class="barBlue"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Discord Rules</p>
+                    <p class="infobDescription"> Discord server rules
+                    </p>
+                    <p class="infobContent" id="content5">
+                        <br>
+                        1. Be respectful
+                        </br>
+                        <br>
+                        You must respect all users, regardless of your liking towards them. Treat others the way you want to be treated.
+                        </br>
+                        <br>
+                        2. No Inappropriate Language
+                        </br>
+                        <br>
+                        The use of profanity should be kept to a minimum. However, any derogatory language towards any user is prohibited. /10 sec timeout
+                        </br>
+                        <br>
+                        3. No spamming
+                        </br>
+                        Don't send a lot of small messages right after each other. Do not disrupt chat by spamming. /timeout /warning
+                        </br>
+                        <br>
+                        4. No pornographic/adult/other NSFW material
+                        </br>
+                        <br>
+                        This is a community server and not meant to share this kind of material./timeout or /ban
+                        </br>
+                        <br>
+                        5. Direct & Indirect Threats
+                        </br>
+                        <br>
+                        Threats to other users of DDoS, Death, DoX, abuse, and other malicious threats are absolutely prohibited and disallowed. = /P-ban ore /p ip-ban
+                        </br>
+                        <br>
+                        6. The │📺・self-promo Is only used for promoting your live streams not your discord servers, If not followed you will get an instant P-Ban
+                        </br>
+                        <br>
+                        7. Follow the Discord Community Guidelines
+                        </br>
+                        <br>
+                        You can find them here: https://discordapp.com/guidelines
+                        </br>
+                    </p>
+                </div>
+                <input class="infoblockButtonBlue" type="button" value="+" onclick="openContent5()" id="button5">
+            </div>
+            <div class="infoblock">
+                <div class="barPink"></div>
+                <div class="infoblockText">
+                    <p class="infobTitle">Texture Pack</p>
+                    <p class="infobDescription"> House System explenation
+                    </p>
+                    <p class="infobContent" id="content6">
+                        <br>
+                        House System commands
+                        </br>
+                        <br>
+                        /sethome
+                        </br>
+                        <br>
+                        /home
+                        </br>
+                        <br>
+                        /delhome
+                        </br>
+                    </p>
+                </div>
+                <input class="infoblockButtonPink" type="button" value="+" onclick="openContent6()" id="button6">
+            </div>
+
+            <p class="articleDescription">
+                This i about the
+            <p class="articleDescription">Server</p>
+
+            <p class="articleTitle">Tutorial video</p>
+
+            <div class="tutorialVideo">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l6IcWZHico8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3SDJljtLa84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="extra">
+            <iframe src="https://discord.com/widget?id=649745315347562508&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+
+
+        <div class="clear"></div>
+        <footer>
+            <p>All rights reserved.</p>
+            <p>Website created by <a href="https://discord.gg/KuURyVGxUW"><strong>MultiHub</strong></a> / MultiHub</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

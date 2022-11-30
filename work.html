@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="information.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+    <script src="core.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="serverIp" onclick="copyIp()">
+            <p>Server status: <span class="serverStatus" id="serverStatus">offline</span> Players: <span class="playersOn" id="playersOn">0</span><span class="playersMax">/</span><span class="playersMax" id="playersMax">0</span></p>
+            <p>SERVER IP » <span class="serverIpText" id="serverIpText">..</span></p>
+            
+        </div>
+        <div class="bar"></div>
+
+        <div id="bannerTop" class="bannerTop">
+            <div class="logo">
+                <a href="./index.html"><img src="logo.png" alt=""></a>
+            </div>
+            
+                <a href="./index.html"><p id="title"></p></a>
+            
+        </div>
+        <div class="barTwo"></div>
+        <div class="clear"></div>
+
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./information.html">Information</a></li>
+                    <li><a style="color: white;" href="./news.html">Shop</a></li>
+                    <li><a href="./help.html">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+
+        <div class="newsArticle">
+
+
+            <div class="news">
+                <div class="newsTitle">
+                    <div class="newsIcon"><img src="swords.png" alt=""></div>
+                    <h1>SHOP WORK IN PROGRESS</h1>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="barTwo"></div>
+                <div class="newsDescription">
+                    <img 
+                        src="https://media.discordapp.net/attachments/1027864299068215316/1027873555188289596/static_1.png"
+                        alt="">
+                    <br>
+                    <div id="smart-button-container">
+                        <div style="text-align: center;">
+                          <div id="paypal-button-container"></div>
+                        </div>
+                      </div>
+                      <div id="paypal-button-container-P-6F950474BV942994MMNUPUHA"></div>
+                      <script src="https://www.paypal.com/sdk/js?client-id=AbooF2Ts84QYY8SKTFGVqT9F81kMP1Hltu6XB56b1PCBDQOrIO9gNnWFaJXHertb7ewO5ekQVS60_Ws1&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+                      <script>
+                        paypal.Buttons({
+                            style: {
+                                shape: 'pill',
+                                color: 'black',
+                                layout: 'horizontal',
+                                label: 'paypal'
+                            },
+                            createSubscription: function(data, actions) {
+                              return actions.subscription.create({
+                                /* Creates the subscription */
+                                plan_id: 'P-6F950474BV942994MMNUPUHA'
+                              });
+                            },
+                            onApprove: function(data, actions) {
+                              alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                            }
+                        }).render('#paypal-button-container-P-6F950474BV942994MMNUPUHA'); // Renders the PayPal button
+                      </script>
+                </div>
+            </div>
+
+        </div>
+
+
+            </ul>
+        </nav>
+
+        <div class="clear"></div>
+        <footer>
+            <p>All rights reserved.</p>
+            <p>Website created by <a href="https://discord.gg/KuURyVGxUW"><strong>MultiHub</strong></a> / MultiHub</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

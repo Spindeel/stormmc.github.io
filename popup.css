@@ -1,0 +1,146 @@
+:root {
+     --popup-top: 40%;
+     --dark-purple: #3d1389ff;
+}
+
+body {
+    margin: 0;
+    background: #2b2b2b;
+    font-family: Arial, Monospace, sans-serif;
+}
+
+.popup
+{
+    background: #1e1e2f;
+    width: 400px;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    position: absolute;
+    top: var(--popup-top);
+    margin: auto;
+    left: 0;
+    right: 0;
+    box-shadow: 5px 15px 15px black;
+    visibility: hidden;
+    z-index: 10;
+    /* visibility: hidden; */
+
+}
+
+@keyframes slide-top {
+    0% {
+        top: 1%;
+    }   
+    100% {
+        top: var(--popup-top);
+    }
+}
+
+.popup-open {
+    opacity: 1;
+    visibility: visible;
+    animation: slite-top 0.5s;
+}
+
+.popup-close {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear; 
+}
+
+.popup-title {
+    font-weight: 700;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popup-description {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.popup-buttons {
+    float: right;
+}
+
+.btn:not(:hover),
+.btn {
+    transition: 0.5s;
+    text-decoration-color: initial;
+    background: transparent;
+    color: #9162e8ff;
+    border: 1xp solid var(--dark-purple);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 7px;
+    min-width: 50px;
+}
+
+.btn:hover {
+    color: white;
+    background: var(--dark-purple);
+}
+
+.body2 {
+    margin: 0;
+    background: #2b2b2b;
+    font-family: Arial, Monospace, sans-serif;
+}
+
+.MVIP
+{
+    background: #1e1e2f;
+    width: 400px;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    position: absolute;
+    top: var(--popup-top);
+    margin: auto;
+    left: 0;
+    right: 0;
+    box-shadow: 5px 15px 15px black;
+    visibility: hidden;
+    z-index: 10;
+    /* visibility: hidden; */
+
+}
+
+@keyframes slide-top {
+    0% {
+        top: 1%;
+    }   
+    100% {
+        top: var(--popup-top);
+    }
+}
+
+.MVIP-open {
+    opacity: 1;
+    visibility: visible;
+    animation: slite-top 0.5s;
+}
+
+.MVIP-close {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear; 
+}
+
+.MVIP-title {
+    font-weight: 700;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.MVIP-description {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.MVIP-buttons {
+    float: right;
+}
