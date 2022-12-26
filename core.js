@@ -6,8 +6,8 @@ window.onload = function () {
     let title = 'MultiHub';
 
     //Server Ip (counter)
-    var serverIp = 'multihub.online';
-    var serverIpPort = 25565;
+    var serverIp = 'smpzjeby.aternos.me';
+    var serverIpPort = 33634;
 
     //Banner image (url) 
     var bannerTop = 'https://i.imgur.com/k0MtSCb.png';
